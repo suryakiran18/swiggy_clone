@@ -1,0 +1,32 @@
+.flex {
+  display: flex; 
+}
+
+.transition-transform {
+  transition: transform 0.5s ease; 
+}
+
+button {
+  cursor: pointer; 
+}
+
+
+
+.overflow-hidden {
+  max-width: 100%; 
+  padding-left: 100px; 
+  padding-right: 100px; 
+  box-sizing: border-box; 
+}
+
+.heading-padding {
+  padding-left: 1000px;  
+  padding-right: 10px; 
+}
+.food-item img {
+  transition: transform 0.3s ease; 
+}
+
+.food-item img:hover {
+  transform: scale(1.1); 
+}

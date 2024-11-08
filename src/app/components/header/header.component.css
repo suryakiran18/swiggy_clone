@@ -1,0 +1,9 @@
+.material-icons {
+    font-size: 18px;
+  }
+  @font-face {
+  font-family: 'ProximaNova';
+  src: url('/path-to-your-fonts/ProximaNova-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}

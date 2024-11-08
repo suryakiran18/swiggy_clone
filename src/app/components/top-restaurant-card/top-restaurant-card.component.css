@@ -1,0 +1,136 @@
+.text-center {
+  text-align: center;
+}
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+
+.carousel-nav {
+  background-color: #e2e2e2;
+  border-radius: 50%;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.carousel-nav:hover {
+  background-color: #c0c0c0;
+}
+
+.carousel-nav:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+
+.carousel-items {
+  display: flex;
+  gap: 1rem;
+  transition: transform 0.3s ease;
+  overflow: hidden;
+  padding: 1rem 0;
+}
+
+
+.restaurant-card {
+  width: 200px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.restaurant-card:hover {
+  transform: translateY(-4px);
+}
+
+
+.restaurant-image {
+  position: relative;
+  height: 120px;
+  background-size: cover;
+  background-position: center;
+}
+
+.discount-label {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background-color: rgba(255, 0, 0, 0.7);
+  color: white;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+
+.restaurant-details {
+  padding: 0.5rem 1rem;
+  text-align: left;
+}
+
+.restaurant-name {
+  font-size: 1.125rem;
+  font-weight: bold;
+  margin: 0.5rem 0 0.25rem;
+}
+
+.rating {
+  color: #555;
+  font-size: 0.875rem;
+  margin-bottom: 0.25rem;
+}
+
+.categories, .location {
+  color: #777;
+  font-size: 0.875rem;
+  margin-bottom: 0.25rem;
+}
+
+
+.carousel-indicator {
+  width: 100%;
+  height: 2px;
+  background-color: #e2e2e2;
+  margin-top: 1rem;
+  margin-left:100px;
+  margin-right:300px;
+  border-radius: 2px;
+}
+.rating {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.3rem;
+}
+
+.rating svg {
+  margin-right: 0.25rem;
+}
+
+.rating-text {
+  font-size: 0.9rem;
+}

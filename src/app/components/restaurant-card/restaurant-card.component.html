@@ -1,0 +1,35 @@
+<div class="text-center py-6">
+  <div class="flex justify-between items-center mb-4">
+    <h2 class="text-2xl font-bold pl-20 pr-10">What's on your mind?</h2> <!-- Added padding here -->
+    <div class="flex space-x-4">
+      
+      <button (click)="prevSlide()" class="p-2 rounded-full bg-gray-200 hover:bg-gray-300 transition" [disabled]="currentIndex === 0">
+        <svg aria-hidden="true" height="24" width="24" viewBox="0 0 24 24">
+          <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" fill="currentColor"/>
+        </svg>
+      </button>
+      
+      
+      <button (click)="nextSlide()" class="p-2 rounded-full bg-gray-200 hover:bg-gray-300 transition" [disabled]="currentIndex + visibleItems >= foodItems.length">
+        <svg aria-hidden="true" height="24" width="24" viewBox="0 0 24 24">
+          <path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z" fill="currentColor"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+  
+  
+  <div class="flex items-center justify-center overflow-hidden">
+    
+    <div class="flex items-center justify-center overflow-hidden">
+      <div class="flex transition-transform" [style.transform]="'translateX(' + (-currentIndex * (itemWidth + 24)) + 'px)'">
+        
+        <div *ngFor="let item of foodItems" class="mx-2 flex-shrink-0 food-item">
+          <button (click)="navigateToRestaurantMenu(item.id)" class="bg-transparent p-2 rounded-full focus:outline-none">
+            <img [src]="item.image" [alt]="item.name" class="w-32 h-32 rounded-full shadow-md">
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
